@@ -1,0 +1,128 @@
+---
+/**
+ * insights/[slug].astro — Growtharchers article template
+ *
+ * Each Insights article is a Markdown file in src/content/insights/.
+ * Astro renders them as individual pages with unique URLs and full SEO.
+ *
+ * USAGE:
+ *   Create src/content/insights/12p-framework.md
+ *   Frontmatter: title, description, publishDate, author, tags
+ *   Body: standard Markdown
+ *
+ * This file handles routing and rendering automatically.
+ *
+ * ADDING A NEW ARTICLE:
+ *   1. Create src/content/insights/your-article-slug.md
+ *   2. Add frontmatter (see example below)
+ *   3. Write content in Markdown
+ *   4. Commit → auto-deploys
+ *
+ * Or use Decap CMS at /admin — no code required.
+ */
+
+import Base from '../../layouts/Base.astro';
+
+// Static placeholder — replace with getCollection('insights') once
+// content collections are configured in src/content/config.ts
+const article = {
+  title: 'The 12P™ Intelligent Commerce Framework',
+  description: 'How twelve commerce pillars across six domains create the complete intelligent commerce operating system — derived from the 6 Values System.',
+  publishDate: '2026-03-01',
+  author: 'Kartik G Iyer',
+  tags: ['12P Framework', 'Commerce Strategy', 'Intelligent Commerce'],
+  readTime: '18 min read',
+};
+---
+
+<Base
+  title={`${article.title} — Growtharchers`}
+  description={article.description}
+  type="article"
+  publishDate={article.publishDate}
+>
+  <article style="padding-top:120px;padding-bottom:96px;">
+    <div class="wrap" style="max-width:780px;">
+
+      <!-- Article header -->
+      <div style="margin-bottom:48px;">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+          {article.tags.map(tag => (
+            <span style="font-size:10px;padding:4px 10px;border-radius:999px;background:rgba(232,160,32,.1);border:1px solid rgba(232,160,32,.2);color:var(--gold);font-weight:600;letter-spacing:.5px;">{tag}</span>
+          ))}
+        </div>
+        <h1 style="font-size:clamp(28px,4vw,48px);font-weight:900;letter-spacing:-1.5px;line-height:1.08;margin-bottom:16px;">{article.title}</h1>
+        <p style="font-size:16px;color:var(--tx2);line-height:1.75;margin-bottom:24px;">{article.description}</p>
+        <div style="display:flex;align-items:center;gap:16px;padding-bottom:24px;border-bottom:1px solid var(--bd);">
+          <div style="width:40px;height:40px;border-radius:10px;background:rgba(232,160,32,.15);border:1.5px solid rgba(232,160,32,.3);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:var(--gold);">KI</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;">{article.author}</div>
+            <div style="font-size:11px;color:var(--mu);">
+              {new Date(article.publishDate).toLocaleDateString('en-IN', { year:'numeric', month:'long', day:'numeric' })}
+              &nbsp;·&nbsp; {article.readTime}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article body — slot for Markdown content -->
+      <div class="article-body" style="font-size:16px;color:var(--tx2);line-height:1.85;font-weight:300;">
+        <slot />
+
+        <!-- Placeholder content for this template -->
+        <p style="background:rgba(232,160,32,.06);border:1px solid rgba(232,160,32,.15);border-radius:12px;padding:20px;color:var(--tx2);font-size:14px;">
+          This is the article template. Create Markdown files in <code style="color:var(--gold);font-family:monospace;">src/content/insights/</code>
+          and they will render here automatically with full SEO, Open Graph, and sitemap inclusion.
+          Or add articles via the Decap CMS at <code style="color:var(--gold);font-family:monospace;">/admin</code>.
+        </p>
+      </div>
+
+      <!-- Back link -->
+      <div style="margin-top:64px;padding-top:32px;border-top:1px solid var(--bd);">
+        <a href="/#insights" style="font-size:13px;font-weight:700;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:6px;">← Back to Insights</a>
+      </div>
+
+    </div>
+  </article>
+</Base>
+
+<style>
+  .article-body h2 {
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 900;
+    letter-spacing: -0.8px;
+    color: var(--tx);
+    margin: 48px 0 16px;
+  }
+  .article-body h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--tx);
+    margin: 32px 0 12px;
+  }
+  .article-body p { margin-bottom: 20px; }
+  .article-body strong { color: var(--tx); font-weight: 700; }
+  .article-body em { color: var(--gold); font-style: normal; font-weight: 600; }
+  .article-body blockquote {
+    border-left: 3px solid var(--gold);
+    padding: 12px 20px;
+    background: rgba(232,160,32,.05);
+    border-radius: 0 10px 10px 0;
+    margin: 28px 0;
+    font-style: italic;
+    color: var(--tx);
+  }
+  .article-body ul, .article-body ol {
+    padding-left: 24px;
+    margin-bottom: 20px;
+  }
+  .article-body li { margin-bottom: 8px; }
+  .article-body code {
+    font-family: monospace;
+    font-size: 13px;
+    background: rgba(255,255,255,.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--gold);
+  }
+</style>

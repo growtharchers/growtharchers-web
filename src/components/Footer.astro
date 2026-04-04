@@ -1,0 +1,76 @@
+---
+/**
+ * Footer.astro — Growtharchers footer
+ * Four-column grid: brand + tagline, Frameworks, Engagements, Archers Ecosystem.
+ * Update footer link hrefs once individual pages exist.
+ */
+
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+
+      <div>
+        <div class="fg-logo">Growth<span>archers</span></div>
+        <p class="fg-tagline">
+          Strategy to Impact.<br />
+          The intelligent commerce advisory that embeds a Chief Commerce
+          Officer alongside your leadership team and shares P&amp;L
+          accountability for the result.
+        </p>
+        <div class="fg-socials">
+          <a class="fg-social" href="https://linkedin.com/company/growtharchers" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a class="fg-social" href="https://twitter.com/growtharchers" target="_blank" rel="noopener" aria-label="Twitter / X">✕</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="fg-col-title">Frameworks</div>
+        <div class="fg-links">
+          <a class="fg-link" href="#frameworks">12P™ Commerce Framework</a>
+          <a class="fg-link" href="#frameworks">6 Commerce Fits Diagnostic</a>
+          <a class="fg-link" href="#frameworks">Three Horizons of Commerce</a>
+          <a class="fg-link" href="#frameworks">72 Outcome Modules</a>
+          <a class="fg-link" href="#frameworks">Commerce-as-a-Service</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="fg-col-title">Engagements</div>
+        <div class="fg-links">
+          <a class="fg-link" href="#engage">Strategic Advisory</a>
+          <a class="fg-link" href="#engage">Transformation Program</a>
+          <a class="fg-link" href="#engage">Fractional CCO</a>
+          <a class="fg-link" href="#engage">Project-Based</a>
+          <a class="fg-link" href="#cta">Start a Conversation</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="fg-col-title">Archers Ecosystem</div>
+        <div class="fg-links">
+          <a class="fg-link" href="https://growtharchers.com" style="color:var(--gold);">Growtharchers ↗</a>
+          <a class="fg-link" href="https://careerarchers.com" target="_blank" rel="noopener">Careerarchers ↗</a>
+          <a class="fg-link" href="https://valuearchers.com" target="_blank" rel="noopener">Valuearchers ↗</a>
+          <a class="fg-link" href="/insights" style="margin-top:8px;">Insights</a>
+          <a class="fg-link" href="#founders">About Us</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="fb-copy">
+        © {year} Growtharchers Consulting LLP · Strategy to Impact · All rights reserved
+      </div>
+      <div class="fb-family">
+        <span class="fb-fam-label">Archers ecosystem:</span>
+        <a class="fb-fam-link" href="https://growtharchers.com" style="color:var(--gold);border-color:rgba(232,160,32,.3);">G∧ Growtharchers</a>
+        <a class="fb-fam-link" href="https://careerarchers.com" target="_blank" rel="noopener">C∧ Careerarchers</a>
+        <a class="fb-fam-link" href="https://valuearchers.com" target="_blank" rel="noopener">V∧ Valuearchers</a>
+      </div>
+    </div>
+  </div>
+</footer>

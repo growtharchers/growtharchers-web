@@ -1,0 +1,1007 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Growtharchers — When Commerce Strategy Needs to Become Commerce Impact."
+  description="The intelligent commerce advisory that embeds a Chief Commerce Officer alongside your leadership team and shares P&L accountability for the result. 12P™ Framework · 6 Commerce Fits · Three Horizons."
+>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag">12P™ Intelligent Commerce · 8 Commerce Fits · Three Horizons</div>
+        <h1 class="hero-title">When Commerce Strategy<br>Needs to Become<br><em>Commerce Impact.</em></h1>
+        <p class="hero-desc">The commerce transformation specialists for brands, platforms, and retailers who need the 12P™ operating system embedded and running — not just recommended. Strategy to Impact. Measurably.</p>
+
+        <div class="seg-selector">
+          <div class="seg-label">We work with —</div>
+          <div class="seg-pills">
+            <button class="seg-pill active" onclick="selectSeg('d2c',this)">D2C Founders</button>
+            <button class="seg-pill" onclick="selectSeg('mp',this)">Marketplace GMs</button>
+            <button class="seg-pill" onclick="selectSeg('retail',this)">Retail &amp; Omnichannel CXOs</button>
+            <button class="seg-pill" onclick="selectSeg('global',this)">Global Brands Entering India</button>
+          </div>
+        </div>
+
+        <div class="seg-messages">
+          <div class="seg-msg active" id="smsg-d2c">
+            <div class="sm-headline">You've found product-market fit. Now you need a commerce operating system.</div>
+            <div class="sm-body">D2C founders at the scaling inflection point need a commerce architecture that connects brand, customer, and channel coherently — not three agencies working in parallel. The 12P™ Framework is that system. The Fractional CCO model shares accountability for delivering it.</div>
+          </div>
+          <div class="seg-msg" id="smsg-mp">
+            <div class="sm-headline">Marketplace share is won at the intersection of brand, content, and commerce intelligence.</div>
+            <div class="sm-body">Marketplace GMs navigating Amazon, Flipkart, Myntra, or ONDC need a commerce strategy that is platform-specific but brand-coherent. The 12P™ Commerce Growth and Differentiation domains — Personalization, Performance, and Primacy — are built for the intelligent commerce era.</div>
+          </div>
+          <div class="seg-msg" id="smsg-retail">
+            <div class="sm-headline">The omnichannel gap is a commerce architecture problem, not a technology one.</div>
+            <div class="sm-body">Retail CXOs integrating D2C, marketplace, and physical retail are solving an architecture problem, not a stack problem. The 12P™ Framework connects brand experience through customer journey through commerce delivery — the whole system, not individual pillars.</div>
+          </div>
+          <div class="seg-msg" id="smsg-global">
+            <div class="sm-headline">India's commerce landscape rewards local architecture intelligence, not global playbook replication.</div>
+            <div class="sm-body">Global brands entering India need a commerce GTM built from India's specific digital commerce dynamics. Growtharchers brings 26+ years of India commerce leadership across Nokia, BlackBerry, Samsung, Apple, and Flipkart.</div>
+          </div>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#approach" class="btn-primary">Explore How We Work <span class="btn-arrow">→</span></a>
+          <a href="#frameworks" class="btn-outline">See the 12P™ Framework</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><div class="hs-num">26+</div><div class="hs-label">Years P&L leadership</div></div>
+          <div><div class="hs-num">12P</div><div class="hs-label">Commerce pillars</div></div>
+          <div><div class="hs-num">72</div><div class="hs-label">Outcome modules</div></div>
+          <div><div class="hs-num">6</div><div class="hs-label">Commerce domains</div></div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="exp-card">
+          <div class="exp-num" style="color:var(--teal);">Brand Experience</div>
+          <div class="exp-name" style="color:var(--teal);">CD1–CD3 · Leadership, Identity &amp; Discovery</div>
+          <div class="exp-q">"Who are you in the world?"</div>
+          <div class="exp-ps">
+            <span class="exp-p" style="background:rgba(59,191,184,.12);color:var(--teal);">P1 Purpose</span>
+            <span class="exp-p" style="background:rgba(59,191,184,.12);color:var(--teal);">P2 Personality</span>
+            <span class="exp-p" style="background:rgba(59,191,184,.12);color:var(--teal);">P3 Perception</span>
+            <span class="exp-p" style="background:rgba(59,191,184,.12);color:var(--teal);">P4 Proposition</span>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-num" style="color:var(--gold);">Customer Experience</div>
+          <div class="exp-name" style="color:var(--gold);">CD4 · Commerce Delivery</div>
+          <div class="exp-q">"How do they feel at every touchpoint?"</div>
+          <div class="exp-ps">
+            <span class="exp-p" style="background:rgba(232,160,32,.12);color:var(--gold);">P5 Pathways</span>
+            <span class="exp-p" style="background:rgba(232,160,32,.12);color:var(--gold);">P6 Platform</span>
+            <span class="exp-p" style="background:rgba(232,160,32,.12);color:var(--gold);">P7 Portfolio</span>
+            <span class="exp-p" style="background:rgba(232,160,32,.12);color:var(--gold);">P8 Promotion</span>
+          </div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-num" style="color:var(--amber);">Commerce Experience</div>
+          <div class="exp-name" style="color:var(--amber);">CD5–CD6 · Growth &amp; Differentiation</div>
+          <div class="exp-q">"What do you deliver at every moment?"</div>
+          <div class="exp-ps">
+            <span class="exp-p" style="background:rgba(224,123,79,.12);color:var(--amber);">P9 Personalization</span>
+            <span class="exp-p" style="background:rgba(224,123,79,.12);color:var(--amber);">P10 Performance</span>
+            <span class="exp-p" style="background:rgba(224,123,79,.12);color:var(--amber);">P11 Promise</span>
+            <span class="exp-p" style="background:rgba(224,123,79,.12);color:var(--amber);">P12 Primacy</span>
+          </div>
+        </div>
+        <div class="exp-flow">
+          <span class="ef-item" style="color:var(--teal);">Brand</span><span class="ef-arrow">→</span>
+          <span class="ef-item" style="color:var(--gold);">Customer</span><span class="ef-arrow">→</span>
+          <span class="ef-item" style="color:var(--amber);">Commerce</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="div-line">
+
+<!-- ══════════ ADVISORY APPROACH ══════════ -->
+<section id="approach">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Advisory Approach</span>
+      <h2>How We <em>Work</em></h2>
+      <p class="lead">Three commerce experiences as the organising frame. Three operating commitments as the non-negotiables. One integrated system — not three agencies working in silos.</p>
+    </div>
+
+    <div class="exp-trio mt-48 reveal">
+      <div class="et-item">
+        <div class="et-dot" style="background:var(--teal);"></div>
+        <div class="et-num" style="color:var(--teal);">Brand Experience · Foundation Layer P1–P4</div>
+        <div class="et-name" style="color:var(--teal);">Who are you in the world?</div>
+        <div class="et-q">Purpose · Personality · Perception · Proposition</div>
+        <p class="et-body">The foundational architecture that makes everything else coherent. Most commerce transformation failures begin here — organisations scale delivery before identity is clear, and build performance systems before the proposition is validated.</p>
+      </div>
+      <div class="et-item">
+        <div class="et-dot" style="background:var(--gold);"></div>
+        <div class="et-num" style="color:var(--gold);">Customer Experience · Omnichannel Layer P5–P8</div>
+        <div class="et-name" style="color:var(--gold);">How do they feel at every touchpoint?</div>
+        <div class="et-q">Pathways · Platform · Portfolio · Promotion</div>
+        <p class="et-body">The journey that turns strangers into buyers and buyers into advocates. We treat the customer experience as an architecture problem, not a campaign problem — because the most expensive part of commerce is repairing a broken customer journey.</p>
+      </div>
+      <div class="et-item">
+        <div class="et-dot" style="background:var(--amber);"></div>
+        <div class="et-num" style="color:var(--amber);">Commerce Experience · Intelligence Layer P9–P12</div>
+        <div class="et-name" style="color:var(--amber);">What do you deliver at every moment?</div>
+        <div class="et-q">Personalization · Performance · Promise · Primacy</div>
+        <p class="et-body">Where strategy becomes P&L. The intelligence layer that personalises at scale, drives measurable growth, keeps every commerce promise made to customers, and extends capability through ecosystem partnerships.</p>
+      </div>
+    </div>
+
+    <div class="commitments-header reveal">
+      <div class="ch-line"></div>
+      <div class="ch-label">Three operating commitments that govern every engagement</div>
+      <div class="ch-line"></div>
+    </div>
+
+    <div class="commitments-grid reveal">
+      <div class="cmt-item">
+        <div class="cmt-n">01</div>
+        <div class="cmt-title">Outcome Orientation</div>
+        <div class="cmt-sub" style="color:var(--teal);">Not outputs. Business impact.</div>
+        <p class="cmt-body">We don't deliver decks. Every engagement is measured by commercial outcomes — revenue, margin, conversion, retention — not deliverables completed. The accountability follows the work.</p>
+      </div>
+      <div class="cmt-item">
+        <div class="cmt-n">02</div>
+        <div class="cmt-title">Organisation-wide AI Alignment</div>
+        <div class="cmt-sub" style="color:var(--gold);">Not pilots. Operating system.</div>
+        <p class="cmt-body">Not AI for marketing, AI for commerce, and AI for service as separate initiatives. AI as the connective tissue across all three experiences — the intelligence that runs the commerce operating system.</p>
+      </div>
+      <div class="cmt-item">
+        <div class="cmt-n">03</div>
+        <div class="cmt-title">Integration &amp; Orchestration</div>
+        <div class="cmt-sub" style="color:var(--amber);">Not silos. Connection.</div>
+        <p class="cmt-body">Brand informs customer informs commerce. The gap in most commerce operations isn't capability — it's connection. We architect the system, not the parts, and hold ourselves accountable for how they work together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="div-line">
+
+<!-- ══════════ THE GROWTHARCHERS DIFFERENCE ══════════ -->
+<section id="difference">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Why Growtharchers Works</span>
+      <h2>The Growtharchers <em>Difference</em></h2>
+      <p class="lead">Three structural reasons Growtharchers produces outcomes that conventional commerce consulting cannot. Not method claims — structural ones.</p>
+    </div>
+    <div class="diff-grid mt-48 reveal">
+      <div class="dg-item">
+        <div class="dg-nn">Differentiator 01</div>
+        <div class="dg-title">The Accountability Principle</div>
+        <div class="dg-subtitle">We Share Your P&L</div>
+        <p class="dg-body">The only intelligent commerce advisory that offers a Fractional CCO model — where we embed alongside your leadership team and take shared accountability for commercial outcomes. Not just strategic clarity. When we recommend, we have skin in the result.</p>
+      </div>
+      <div class="dg-item">
+        <div class="dg-nn">Differentiator 02</div>
+        <div class="dg-title">The Practitioner Principle</div>
+        <div class="dg-subtitle">Built From 26 Years of P&L</div>
+        <p class="dg-body">The 12P™ Framework is not an academic construct. It is built from 26+ years of commerce P&L leadership across Nokia, BlackBerry, Samsung, Apple India, Flipkart, and Publicis. Every pillar was stress-tested in real commerce operations before it became a framework.</p>
+      </div>
+      <div class="dg-item">
+        <div class="dg-nn">Differentiator 03</div>
+        <div class="dg-title">The Integration Principle</div>
+        <div class="dg-subtitle">Commerce as One System</div>
+        <p class="dg-body">The industry excels at brand OR customer OR commerce — separately. The gap isn't capability; it's connection. Growtharchers exists to close that gap, building the integrated commerce operating system rather than optimising individual pillars in isolation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="div-line">
+
+<!-- ══════════ FRACTIONAL CCO ══════════ -->
+<section id="fcco">
+  <div class="wrap">
+    <div class="fcco-layout">
+      <div class="fcco-left reveal">
+        <div class="fcco-badge">✦ &nbsp;The Signature Growtharchers Engagement</div>
+        <h2 class="fcco-title">The Only Commerce Advisory That Shares Your <em>P&L Accountability.</em></h2>
+        <div class="fcco-statement">"The only commerce advisory that embeds a Chief Commerce Officer alongside your leadership team and shares P&L accountability for the result."</div>
+        <p class="fcco-body">The Fractional CCO model is structurally different from any advisory engagement in commerce consulting. We don't deliver a strategy and disengage. We embed as your Chief Commerce Officer — present at the decisions, accountable for the outcomes, running the 12P™ operating system across all three commerce experiences.</p>
+        <div class="fcco-distinctions">
+          <div class="fcco-d"><div class="fcco-d-dot"></div><div class="fcco-d-text"><strong>Embedded, not advisory.</strong> 2–3 days per week alongside your leadership team — making decisions, not summarising them.</div></div>
+          <div class="fcco-d"><div class="fcco-d-dot"></div><div class="fcco-d-text"><strong>Commerce-specific accountability.</strong> The CCO role owns the full 12P operating system — Brand Experience through Commerce Experience — not just a functional slice.</div></div>
+          <div class="fcco-d"><div class="fcco-d-dot"></div><div class="fcco-d-text"><strong>Outcome accountability.</strong> Specific commercial KPIs defined at engagement start. Measured by them. Not by deliverables.</div></div>
+          <div class="fcco-d"><div class="fcco-d-dot"></div><div class="fcco-d-text"><strong>Continuous cadence.</strong> Commerce transformation doesn't happen in workshops. The Fractional CCO runs on a continuous Discover → Define → Deliver cycle.</div></div>
+        </div>
+        <a href="#cta" class="btn-primary" style="font-size:13px;padding:13px 24px;">Explore the Fractional CCO Model <span class="btn-arrow">→</span></a>
+      </div>
+      <div class="reveal">
+        <div class="fcco-stat-row">
+          <div class="fsc"><div class="fsc-label">Engagement mode</div><div class="fsc-val">Embedded</div><div class="fsc-sub">2–3 days/week alongside leadership</div></div>
+          <div class="fsc"><div class="fsc-label">Accountability</div><div class="fsc-val">P&L</div><div class="fsc-sub">Commercial outcomes, not outputs</div></div>
+        </div>
+        <div class="fcco-compare">
+          <div class="fcc-head">
+            <div class="fcc-hcell">Dimension</div>
+            <div class="fcc-hcell">Typical consultant</div>
+            <div class="fcc-hcell" style="color:var(--gold);">Fractional CCO</div>
+          </div>
+          <div class="fcc-row"><div class="fcc-cell attr">Presence</div><div class="fcc-cell" style="color:var(--tx2);">Periodic engagements</div><div class="fcc-cell ga">Embedded weekly</div></div>
+          <div class="fcc-row"><div class="fcc-cell attr">Title &amp; mandate</div><div class="fcc-cell" style="color:var(--tx2);">External advisor</div><div class="fcc-cell ga">Chief Commerce Officer</div></div>
+          <div class="fcc-row"><div class="fcc-cell attr">Accountability</div><div class="fcc-cell" style="color:var(--tx2);">Deliverables</div><div class="fcc-cell ga">Commercial KPIs</div></div>
+          <div class="fcc-row"><div class="fcc-cell attr">Operating mode</div><div class="fcc-cell" style="color:var(--tx2);">Recommend</div><div class="fcc-cell ga">Decide &amp; execute</div></div>
+          <div class="fcc-row"><div class="fcc-cell attr">Scope</div><div class="fcc-cell" style="color:var(--tx2);">Project</div><div class="fcc-cell ga">Full 12P™ OS</div></div>
+          <div class="fcc-row"><div class="fcc-cell attr">Risk share</div><div class="fcc-cell" style="color:var(--tx2);">None</div><div class="fcc-cell ga">P&L aligned</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="div-line">
+
+<!-- ══════════ CAPABILITIES ══════════ -->
+<section id="capabilities">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Advisory Capabilities</span>
+      <h2>What We <em>Do</em></h2>
+      <p class="lead">Six commerce capability domains, organised across the three experiences. 26+ years of P&L leadership distilled into a deployable operating system.</p>
+    </div>
+    <div class="cap-grid mt-48">
+      <div class="cap-card reveal"><div class="cap-bar" style="background:var(--teal);"></div><div class="cap-icon">◎</div><div class="cap-title">Commerce Strategy</div><div class="cap-desc">Where-to-play and how-to-win decisions. Market entry, competitive positioning, and portfolio strategy across D2C, marketplace, and omnichannel.</div></div>
+      <div class="cap-card reveal"><div class="cap-bar" style="background:var(--gold);"></div><div class="cap-icon">◈</div><div class="cap-title">Brand &amp; Proposition</div><div class="cap-desc">Identity architecture, value proposition design, pricing strategy, and differentiation frameworks that make the commercial offer structurally compelling.</div></div>
+      <div class="cap-card reveal"><div class="cap-bar" style="background:var(--amber);"></div><div class="cap-icon">⬡</div><div class="cap-title">Platform &amp; Technology</div><div class="cap-desc">Commerce stack selection, CDP and analytics infrastructure, API architecture, and AI enablement across the full 12P™ operating system.</div></div>
+      <div class="cap-card reveal"><div class="cap-bar" style="background:var(--teal);"></div><div class="cap-icon">◉</div><div class="cap-title">Omnichannel Architecture</div><div class="cap-desc">D2C, marketplace, and retail channel integration. Channel economics, route-to-market design, and unified commerce operations.</div></div>
+      <div class="cap-card reveal"><div class="cap-bar" style="background:var(--gold);"></div><div class="cap-icon">✦</div><div class="cap-title">Growth &amp; Performance</div><div class="cap-desc">Acquisition, conversion, and retention optimisation. LTV/CAC modelling, growth loop design, and performance marketing architecture.</div></div>
+      <div class="cap-card reveal"><div class="cap-bar" style="background:var(--indigo);"></div><div class="cap-icon">◈</div><div class="cap-title">AI &amp; Personalization</div><div class="cap-desc">Recommendation engines, journey orchestration, autonomous commerce roadmap, and AI-native operations across all three experience layers.</div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="div-line">
+
+<!-- ══════════ FRAMEWORKS ══════════ -->
+<section id="frameworks">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Proprietary Frameworks</span>
+      <h2>Our Intellectual <em>Property</em></h2>
+      <p class="lead">Three battle-tested frameworks that turn commerce complexity into clarity. Built from practice, not theory — stress-tested across 26+ years of real commerce P&L.</p>
+    </div>
+
+    <div class="fw-tabs mt-48 reveal">
+      <button class="fw-tab active" onclick="showFW('p12',this)">12P™ Intelligent Commerce Framework</button>
+      <button class="fw-tab" onclick="showFW('cf',this)">6 Commerce Fits Diagnostic</button>
+      <button class="fw-tab" onclick="showFW('th',this)">Three Horizons of Commerce</button>
+    </div>
+
+    <div class="fw-panels">
+
+      <!-- 12P FRAMEWORK -->
+      <div class="fw-panel active" id="fwp-p12">
+        <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:start;margin-bottom:28px;" class="reveal">
+          <div>
+            <div style="width:56px;height:56px;border-radius:14px;background:rgba(232,160,32,.12);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:var(--gold);margin-bottom:16px;">12P</div>
+            <h3 style="font-size:clamp(18px,3vw,28px);font-weight:900;letter-spacing:-.8px;margin-bottom:8px;">12P™ Intelligent Commerce Framework</h3>
+            <p style="font-size:13px;color:var(--tx2);line-height:1.8;font-weight:300;margin-bottom:20px;">12 pillars. 72 outcome modules. 6 Commerce Domains. Derived from the 6 Values System — each domain is the commerce execution of a value domain, from Leadership and Identity through Delivery and Growth to Differentiation. A deployable commerce operating architecture, not a strategic framework.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <div style="text-align:center;padding:12px 16px;background:var(--surf);border-radius:var(--r);border:1px solid var(--bd);"><div style="font-size:20px;font-weight:900;color:var(--gold);">12</div><div style="font-size:10px;color:var(--mu);letter-spacing:1px;text-transform:uppercase;">Pillars</div></div>
+              <div style="text-align:center;padding:12px 16px;background:var(--surf);border-radius:var(--r);border:1px solid var(--bd);"><div style="font-size:20px;font-weight:900;color:var(--gold);">72</div><div style="font-size:10px;color:var(--mu);letter-spacing:1px;text-transform:uppercase;">Outcome Modules</div></div>
+              <div style="text-align:center;padding:12px 16px;background:var(--surf);border-radius:var(--r);border:1px solid var(--bd);"><div style="font-size:20px;font-weight:900;color:var(--gold);">6</div><div style="font-size:10px;color:var(--mu);letter-spacing:1px;text-transform:uppercase;">Commerce Domains</div></div>
+            </div>
+          </div>
+          <div style="background:var(--surf);border-radius:var(--r2);border:1px solid var(--bd);padding:20px;">
+            <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:14px;">6 Commerce Domains · derived from 6 Values System</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--teal);background:rgba(59,191,184,.05);display:flex;justify-content:space-between;align-items:center;">
+                <div><div style="font-size:11px;font-weight:700;color:var(--teal);">CD1 Commerce Leadership</div><div style="font-size:10px;color:var(--mu);margin-top:1px;">From V1 Value Leadership</div></div>
+                <div style="font-size:10px;color:var(--mu);">P1 Purpose</div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--teal);background:rgba(59,191,184,.04);display:flex;justify-content:space-between;align-items:center;">
+                <div><div style="font-size:11px;font-weight:700;color:var(--teal);">CD2 Commerce Identity</div><div style="font-size:10px;color:var(--mu);margin-top:1px;">From V2 Value Identity</div></div>
+                <div style="font-size:10px;color:var(--mu);">P2 · P3</div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--gold);background:rgba(232,160,32,.05);display:flex;justify-content:space-between;align-items:center;">
+                <div><div style="font-size:11px;font-weight:700;color:var(--gold);">CD3 Commerce Discovery</div><div style="font-size:10px;color:var(--mu);margin-top:1px;">From V3 Value Discovery</div></div>
+                <div style="font-size:10px;color:var(--mu);">P4 Proposition</div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--amber);background:rgba(224,123,79,.05);display:flex;justify-content:space-between;align-items:center;">
+                <div><div style="font-size:11px;font-weight:700;color:var(--amber);">CD4 Commerce Delivery</div><div style="font-size:10px;color:var(--mu);margin-top:1px;">From V4 Value Delivery</div></div>
+                <div style="font-size:10px;color:var(--mu);">P5 · P6 · P7 · P8 · P11</div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--indigo);background:rgba(123,92,229,.05);display:flex;justify-content:space-between;align-items:center;">
+                <div><div style="font-size:11px;font-weight:700;color:var(--indigo);">CD5 Commerce Growth</div><div style="font-size:10px;color:var(--mu);margin-top:1px;">From V5 Value Growth</div></div>
+                <div style="font-size:10px;color:var(--mu);">P9 · P10</div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--indigo);background:rgba(123,92,229,.04);display:flex;justify-content:space-between;align-items:center;">
+                <div><div style="font-size:11px;font-weight:700;color:var(--indigo);">CD6 Commerce Differentiation</div><div style="font-size:10px;color:var(--mu);margin-top:1px;">From V6 Value Differentiation · Concurrent with CD5</div></div>
+                <div style="font-size:10px;color:var(--mu);">P12 Primacy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar selector -->
+        <div class="reveal" style="margin-bottom:20px;">
+          <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">Select a pillar — explore its outcome definition and 6 outcome modules</div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);font-weight:700;width:130px;flex-shrink:0;">CD1 · Leadership</span>
+              <button class="p12-ptab active" id="ptab-p1" onclick="selectPillar('p1',this)">P1 · Purpose</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);font-weight:700;width:130px;flex-shrink:0;">CD2 · Identity</span>
+              <button class="p12-ptab" id="ptab-p2" onclick="selectPillar('p2',this)">P2 · Personality</button>
+              <button class="p12-ptab" id="ptab-p3" onclick="selectPillar('p3',this)">P3 · Perception</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700;width:130px;flex-shrink:0;">CD3 · Discovery</span>
+              <button class="p12-ptab" id="ptab-p4" onclick="selectPillar('p4',this)">P4 · Proposition</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--amber);font-weight:700;width:130px;flex-shrink:0;">CD4 · Delivery</span>
+              <button class="p12-ptab" id="ptab-p5" onclick="selectPillar('p5',this)">P5 · Pathways</button>
+              <button class="p12-ptab" id="ptab-p6" onclick="selectPillar('p6',this)">P6 · Platform</button>
+              <button class="p12-ptab" id="ptab-p7" onclick="selectPillar('p7',this)">P7 · Portfolio</button>
+              <button class="p12-ptab" id="ptab-p8" onclick="selectPillar('p8',this)">P8 · Promotion</button>
+              <button class="p12-ptab" id="ptab-p11" onclick="selectPillar('p11',this)">P11 · Promise</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--indigo);font-weight:700;width:130px;flex-shrink:0;">CD5 · Growth</span>
+              <button class="p12-ptab" id="ptab-p9" onclick="selectPillar('p9',this)">P9 · Personalization</button>
+              <button class="p12-ptab" id="ptab-p10" onclick="selectPillar('p10',this)">P10 · Performance</button>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--indigo);font-weight:700;width:130px;flex-shrink:0;">CD6 · Differentiation</span>
+              <button class="p12-ptab" id="ptab-p12" onclick="selectPillar('p12',this)">P12 · Primacy</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar panels -->
+        <div id="p12-panel-area" class="reveal">
+
+          <!-- P1 -->
+          <div class="p12-panel active" id="pp-p1">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(59,191,184,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--teal);margin-bottom:12px;">P1</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--teal);margin-bottom:3px;">Purpose</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);opacity:.7;margin-bottom:4px;">Strategy &amp; Direction</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(59,191,184,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--teal);">CD1 · Commerce Leadership</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Defines where the commerce operation competes, why it exists, and what strategic direction governs every subsequent decision across the 12P system. Without clear Purpose, all other pillars optimise toward an undefined destination.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 1</div><div class="sm-name">Vision Design</div><div class="sm-outcome">Strategic direction that tells the entire organisation exactly where to compete and why</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 2</div><div class="sm-name">Mission Articulation</div><div class="sm-outcome">Operational clarity that mobilises teams around a single, unambiguous commercial purpose</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 3</div><div class="sm-name">Strategic Positioning</div><div class="sm-outcome">Competitive position that makes the right-to-win in chosen arenas structurally defensible</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 4</div><div class="sm-name">Competitive Intelligence</div><div class="sm-outcome">Intelligence that sharpens where-to-play choices before competitors force your hand</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 5</div><div class="sm-name">Market Segmentation</div><div class="sm-outcome">Segmentation that focuses resource allocation on the highest-value opportunity arenas</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 6</div><div class="sm-name">Commercial Ambition</div><div class="sm-outcome">The directional aspiration that tells every pillar what commercial scale and position the framework is designed to achieve</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P2 -->
+          <div class="p12-panel" id="pp-p2">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(59,191,184,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--teal);margin-bottom:12px;">P2</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--teal);margin-bottom:3px;">Personality</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);opacity:.7;margin-bottom:4px;">Brand Identity</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(59,191,184,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--teal);">CD2 · Commerce Identity</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Builds the brand character architecture that makes the commerce operation recognisably itself — and premium-priced — across every touchpoint, channel, and context at scale.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 1</div><div class="sm-name">Brand Architecture</div><div class="sm-outcome">Brand structure that scales coherently across categories, channels, and markets</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 2</div><div class="sm-name">Visual Identity System</div><div class="sm-outcome">Visual system that makes the brand instantly recognisable — and premium-priced</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 3</div><div class="sm-name">Tone &amp; Voice</div><div class="sm-outcome">Consistent voice that builds trust across every customer touchpoint</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 4</div><div class="sm-name">Brand Storytelling</div><div class="sm-outcome">Narrative that creates emotional connection and reduces price sensitivity</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 5</div><div class="sm-name">Culture Alignment</div><div class="sm-outcome">Internal culture that delivers the brand promise without management enforcement</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 6</div><div class="sm-name">Identity Governance</div><div class="sm-outcome">Governance that prevents brand dilution as the organisation scales</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P3 -->
+          <div class="p12-panel" id="pp-p3">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(59,191,184,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--teal);margin-bottom:12px;">P3</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--teal);margin-bottom:3px;">Perception</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);opacity:.7;margin-bottom:4px;">Customer Discovery</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(59,191,184,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--teal);">CD2 · Commerce Identity</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Closes the gap between what the brand intends to communicate and what the market actually experiences — the most consistent source of commercial underperformance in commerce operations.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 1</div><div class="sm-name">Customer Research</div><div class="sm-outcome">Customer truth that closes the gap between what the brand assumes and what the market believes</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 2</div><div class="sm-name">Journey Mapping</div><div class="sm-outcome">Journey clarity that exposes every point where customers drop off and revenue is lost</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 3</div><div class="sm-name">Persona Development</div><div class="sm-outcome">Personas that sharpen targeting so every marketing rupee reaches the right buyer</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 4</div><div class="sm-name">Need-State Analysis</div><div class="sm-outcome">Need-state intelligence that uncovers demand the competition has not yet addressed</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 5</div><div class="sm-name">Behavioral Analytics</div><div class="sm-outcome">Behavioural signals that predict what customers will do before they do it</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 6</div><div class="sm-name">Voice of Customer</div><div class="sm-outcome">Customer voice that surfaces what surveys never capture — the real reasons for churn</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P4 -->
+          <div class="p12-panel" id="pp-p4">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(59,191,184,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--teal);margin-bottom:12px;">P4</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--teal);margin-bottom:3px;">Proposition</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);opacity:.7;margin-bottom:4px;">Value Design</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(232,160,32,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--gold);">CD3 · Commerce Discovery</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Designs the full value architecture — proposition, pricing, bundling, differentiation, and messaging — that makes the commercial offer genuinely compelling and structurally difficult for competitors to replicate.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 1</div><div class="sm-name">Value Architecture</div><div class="sm-outcome">Value proposition that commands premium pricing and makes comparison shopping irrelevant</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 2</div><div class="sm-name">Pricing Strategy</div><div class="sm-outcome">Pricing that captures maximum willingness to pay without sacrificing conversion rate</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 3</div><div class="sm-name">Bundle Design</div><div class="sm-outcome">Bundle architecture that increases average order value and reduces single-item churn</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 4</div><div class="sm-name">Differentiation Framework</div><div class="sm-outcome">Differentiation that makes the brand the only logical choice in its category</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 5</div><div class="sm-name">Positioning Matrix</div><div class="sm-outcome">Positioning that maps and owns the highest-value competitive white space</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--teal);">OM 6</div><div class="sm-name">Messaging System</div><div class="sm-outcome">Messaging that converts at every touchpoint by speaking precisely to each buyer's need state</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P5 -->
+          <div class="p12-panel" id="pp-p5">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(232,160,32,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--gold);margin-bottom:12px;">P5</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--gold);margin-bottom:3px;">Pathways</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);opacity:.7;margin-bottom:4px;">Channel Strategy</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(224,123,79,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--amber);">CD4 · Commerce Delivery</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Architects how customers discover, engage, and transact across D2C, marketplace, and physical retail — ensuring the proposition reaches the right buyer through the right commerce journey at the right economics.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 1</div><div class="sm-name">Channel Strategy</div><div class="sm-outcome">Channel mix that maximises market reach at the lowest sustainable cost of acquisition</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 2</div><div class="sm-name">Route-to-Market</div><div class="sm-outcome">Route-to-market that reaches the right buyers before competitors establish category presence</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 3</div><div class="sm-name">D2C Architecture</div><div class="sm-outcome">D2C capability that owns the customer relationship and eliminates channel dependency</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 4</div><div class="sm-name">Marketplace Integration</div><div class="sm-outcome">Marketplace presence that wins buy box, visibility, and share-of-search at scale</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 5</div><div class="sm-name">Retail Enablement</div><div class="sm-outcome">Retail execution that converts shelf presence and listings into measurable revenue</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 6</div><div class="sm-name">Channel Economics</div><div class="sm-outcome">Channel economics that make every distribution decision commercially accountable</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P6 -->
+          <div class="p12-panel" id="pp-p6">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(232,160,32,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--gold);margin-bottom:12px;">P6</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--gold);margin-bottom:3px;">Platform</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);opacity:.7;margin-bottom:4px;">Technology Stack</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(224,123,79,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--amber);">CD4 · Commerce Delivery</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Builds the technology infrastructure that enables commerce at scale and speed — without accumulating the technical debt that caps future growth or the system fragmentation that destroys commercial velocity.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 1</div><div class="sm-name">Commerce Stack Design</div><div class="sm-outcome">Technology stack that enables commerce at scale without accumulating technical debt</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 2</div><div class="sm-name">System Integration</div><div class="sm-outcome">System integration that eliminates data silos and makes every decision intelligence-driven</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 3</div><div class="sm-name">Data Infrastructure</div><div class="sm-outcome">Data infrastructure that makes every commercial decision faster and more accurate</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 4</div><div class="sm-name">API Architecture</div><div class="sm-outcome">API architecture that gives the commerce operation the velocity to outpace competitors</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 5</div><div class="sm-name">Cloud Operations</div><div class="sm-outcome">Cloud operations that scale revenue without outages, downtime, or performance degradation</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 6</div><div class="sm-name">Security &amp; Compliance</div><div class="sm-outcome">Security posture that protects revenue, customer trust, and regulatory standing simultaneously</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P7 -->
+          <div class="p12-panel" id="pp-p7">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(232,160,32,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--gold);margin-bottom:12px;">P7</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--gold);margin-bottom:3px;">Portfolio</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);opacity:.7;margin-bottom:4px;">Product &amp; Catalog</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(224,123,79,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--amber);">CD4 · Commerce Delivery</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Optimises the full product, catalog, and content architecture to maximise discovery, conversion, and margin across every channel — eliminating the assortment gaps and stockouts that destroy commercial momentum.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 1</div><div class="sm-name">Catalog Management</div><div class="sm-outcome">Catalog that is always accurate, discoverable, and optimised for conversion across channels</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 2</div><div class="sm-name">Assortment Planning</div><div class="sm-outcome">Assortment that maximises sell-through at margin without excess inventory exposure</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 3</div><div class="sm-name">Inventory Optimization</div><div class="sm-outcome">Inventory intelligence that eliminates both stockouts and overstock — the two biggest margin destroyers</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 4</div><div class="sm-name">Merchandising Strategy</div><div class="sm-outcome">Merchandising that increases basket size without increasing acquisition cost</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 5</div><div class="sm-name">Content Production</div><div class="sm-outcome">Product content that converts browsers to buyers and reduces return rates simultaneously</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 6</div><div class="sm-name">Visual Commerce</div><div class="sm-outcome">Visual commerce that increases conversion rate and reduces purchase anxiety at the moment of decision</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P8 -->
+          <div class="p12-panel" id="pp-p8">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(232,160,32,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--gold);margin-bottom:12px;">P8</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--gold);margin-bottom:3px;">Promotion</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gold);opacity:.7;margin-bottom:4px;">Marketing &amp; Comms</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(224,123,79,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--amber);">CD4 · Commerce Delivery</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Creates commercial intent at scale — awareness, consideration, and preference — for audiences who do not yet have a relationship with the brand. P8 is the demand creation engine; P9 Personalization and P10 Performance convert that demand into revenue. Paid performance acquisition belongs in P10.</div></div>
+                <div class="p12-bridge"><div class="p12-bridge-text">The 6 Values System names Promotion as a growth lever within V5 Value Growth. The 12P builds the demand creation system that executes that lever — awareness, consideration, and preference. Paid acquisition (Performance Marketing) is housed in P10 Performance, not here.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 1</div><div class="sm-name">Campaign Strategy</div><div class="sm-outcome">Campaign architecture that builds brand equity and drives commerce revenue in the same motion</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 2</div><div class="sm-name">Media Planning</div><div class="sm-outcome">Media mix that delivers the lowest cost per qualified lead at the required scale</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 3</div><div class="sm-name">Content Marketing</div><div class="sm-outcome">Content that generates organic demand at zero marginal cost per additional buyer</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 4</div><div class="sm-name">Influencer Strategy</div><div class="sm-outcome">Influence architecture that converts social attention to measurable purchase intent</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 5</div><div class="sm-name">Commerce Media</div><div class="sm-outcome">Commerce media presence — retail media networks, sponsored listings — that captures purchase intent at the precise moment of commercial decision</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--gold);">OM 6</div><div class="sm-name">Brand Communications</div><div class="sm-outcome">Communications that compound long-term brand equity while driving short-term sales</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P9 -->
+          <div class="p12-panel" id="pp-p9">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(224,123,79,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--amber);margin-bottom:12px;">P9</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--amber);margin-bottom:3px;">Personalization</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--amber);opacity:.7;margin-bottom:4px;">1:1 at Scale</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(123,92,229,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--indigo);">CD5 · Commerce Growth</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Delivers 1:1 relevance across every customer touchpoint at commerce scale — from segmentation and recommendation through journey orchestration and next-best-action intelligence.</div></div>
+                <div class="p12-bridge"><div class="p12-bridge-text">The 6 Values System names Personalisation as a capability within V5 Value Growth. The 12P builds the intelligence architecture — segmentation, recommendations, journey orchestration — that delivers it operationally.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 1</div><div class="sm-name">Segmentation Engine</div><div class="sm-outcome">Segmentation engine that treats each customer as a market of one — at commerce scale</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 2</div><div class="sm-name">Recommendation Systems</div><div class="sm-outcome">Recommendation intelligence that increases basket size and cross-sell revenue automatically</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 3</div><div class="sm-name">Loyalty Architecture</div><div class="sm-outcome">Intelligence-driven loyalty system that deepens the brand relationship through personalised recognition, rewards, and communication — making retention a competitive moat</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 4</div><div class="sm-name">Journey Orchestration</div><div class="sm-outcome">Journey orchestration that guides every customer to their next purchase without manual intervention</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 5</div><div class="sm-name">Real-time Triggers</div><div class="sm-outcome">Real-time triggers that capture purchase intent at the precise moment of highest conversion probability</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 6</div><div class="sm-name">Next-Best-Action</div><div class="sm-outcome">Next-best-action intelligence that knows what each customer needs — before they search for it</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P10 -->
+          <div class="p12-panel" id="pp-p10">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(224,123,79,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--amber);margin-bottom:12px;">P10</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--amber);margin-bottom:3px;">Performance</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--amber);opacity:.7;margin-bottom:4px;">Growth Engine</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(123,92,229,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--indigo);">CD5 · Commerce Growth</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Runs the full commerce growth engine — paid acquisition, conversion, retention, loyalty programme performance, and referral — translating the demand P8 creates into compounding commercial return. Performance Marketing (paid acquisition) is housed here, not in P8.</div></div>
+                <div class="p12-bridge"><div class="p12-bridge-text">The 6 Values System V5·P10 Performance measures commercial output. The 12P Performance pillar is the growth engine that produces that output — from acquisition strategy through growth analytics.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 1</div><div class="sm-name">Acquisition Strategy</div><div class="sm-outcome">Acquisition engine that brings the right customers at a cost the unit economics can sustain</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 2</div><div class="sm-name">Conversion Optimization</div><div class="sm-outcome">Conversion architecture that turns existing traffic into incremental revenue without additional spend</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 3</div><div class="sm-name">Retention Programs</div><div class="sm-outcome">Retention system that makes every customer more commercially valuable over time</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 4</div><div class="sm-name">Loyalty Programme Performance</div><div class="sm-outcome">Commercial measurement of loyalty effectiveness — tracking frequency uplift, spend per member, and NPS improvement as direct revenue outcomes</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 5</div><div class="sm-name">Referral Systems</div><div class="sm-outcome">Referral engine that makes satisfied customers your lowest-cost and highest-quality acquisition channel</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 6</div><div class="sm-name">Growth Analytics</div><div class="sm-outcome">Growth intelligence that identifies exactly where the next tranche of revenue will come from</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P11 PROMISE -->
+          <div class="p12-panel" id="pp-p11">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(224,123,79,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--amber);margin-bottom:12px;">P11</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--amber);margin-bottom:3px;">Promise</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--amber);opacity:.7;margin-bottom:4px;">Commerce Promise Architecture</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(224,123,79,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--amber);">CD4 · Commerce Delivery</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Keeps every commitment a commerce business makes to a customer across seven distinct promise dimensions — Search, Selection, Availability, Purchase, Delivery, Return, and Support — the full promise lifecycle.</div></div>
+                <div class="p12-promise-box">
+                  <div class="ppb-label">The 7 Commerce Promises</div>
+                  <div class="ppb-items">
+                    <div class="ppb-item"><div class="ppb-dot"></div>Search Promise</div>
+                    <div class="ppb-item"><div class="ppb-dot"></div>Selection Promise</div>
+                    <div class="ppb-item"><div class="ppb-dot"></div>Availability Promise</div>
+                    <div class="ppb-item"><div class="ppb-dot"></div>Purchase Promise</div>
+                    <div class="ppb-item"><div class="ppb-dot"></div>Delivery Promise</div>
+                    <div class="ppb-item"><div class="ppb-dot"></div>Return Promise</div>
+                    <div class="ppb-item"><div class="ppb-dot"></div>Support Promise</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules · Search &amp; Selection combined in OM1</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 1</div><div class="sm-name">Search &amp; Selection Promise</div><div class="sm-outcome">Discovery and choice architecture that fulfils the commitment to effortless finding and informed selection</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 2</div><div class="sm-name">Availability Promise</div><div class="sm-outcome">Real-time inventory truth that eliminates the disappointment of stockouts at every channel</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 3</div><div class="sm-name">Purchase Promise</div><div class="sm-outcome">Transaction experience that builds confidence and eliminates hesitation at the moment of commitment</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 4</div><div class="sm-name">Delivery Promise</div><div class="sm-outcome">Fulfilment precision that makes the delivery experience consistently exceed the customer's expectation</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 5</div><div class="sm-name">Return Promise</div><div class="sm-outcome">Returns architecture that retains customer spend and loyalty rather than just processing the reversal</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 6</div><div class="sm-name">Support Promise</div><div class="sm-outcome">Support model that resolves issues at the speed of commerce and converts problems into loyalty moments</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- P12 -->
+          <div class="p12-panel" id="pp-p12">
+            <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:32px;align-items:start;">
+              <div>
+                <div style="width:52px;height:52px;border-radius:12px;background:rgba(224,123,79,.12);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:var(--amber);margin-bottom:12px;">P12</div>
+                <div style="font-size:21px;font-weight:900;letter-spacing:-.5px;color:var(--amber);margin-bottom:3px;">Primacy</div>
+                <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--amber);opacity:.7;margin-bottom:4px;">Commerce Moat Architecture</div>
+                <div style="font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--mu);padding:3px 10px;background:rgba(123,92,229,.08);border-radius:5px;display:inline-block;margin-bottom:12px;color:var(--indigo);">CD6 · Commerce Differentiation</div>
+                <div class="p12-outcome"><div class="p12-outcome-label">Pillar outcome</div><div class="p12-outcome-text">Converts the intelligence generated by P9 and P10 into structural commercial advantages — proprietary data assets, ecosystem moats, and competitive intelligence — that make the commerce operation genuinely difficult to displace. Primacy does not operate after growth; it runs concurrently with it. Every transaction is an opportunity to compound a moat. Every growth cycle that runs without proprietary data architecture is intelligence permanently lost.</div></div>
+                <div class="p12-bridge"><div class="p12-bridge-text">The 6VS V6 Value Differentiation names the moat types — Proprietary knowhow, Partnerships, Platform effects, Power, Protection. P12 Primacy is the commerce execution of all five simultaneously: ecosystem reach through alliances, proprietary intelligence through first-party data, structural advantage through network effects, market power through competitive intelligence, and protection through commerce IP governance.</div></div>
+              </div>
+              <div>
+                <div style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:10px;">6 Outcome Modules · runs concurrently with Commerce Growth</div>
+                <div class="p12-sm-grid">
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 1</div><div class="sm-name">Partner Strategy</div><div class="sm-outcome">Ecosystem partnerships that extend market reach and capability beyond what the brand can build or fund alone</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 2</div><div class="sm-name">Alliance Development</div><div class="sm-outcome">Strategic alliances that open new revenue channels and create structural competitive access without proportional investment</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 3</div><div class="sm-name">Network Effects</div><div class="sm-outcome">Platform and ecosystem architecture that becomes harder to displace — and more commercially valuable — with every additional participant, transaction, and data point</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 4</div><div class="sm-name">First-Party Data Architecture</div><div class="sm-outcome">Proprietary customer intelligence system — behavioural signals, preference patterns, predictive models — that no competitor can purchase, replicate, or access</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 5</div><div class="sm-name">Commerce IP &amp; Protection</div><div class="sm-outcome">Legal and operational architecture that protects proprietary methods, algorithms, and commercial intelligence from competitive erosion and regulatory risk</div></div>
+                  <div class="p12-sm-card"><div class="sm-num" style="color:var(--amber);">OM 6</div><div class="sm-name">Competitive Intelligence</div><div class="sm-outcome">Systematic market intelligence architecture that converts competitive signals into strategic advantage before competitors recognise the shift</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end p12-panel-area -->
+
+        <!-- CaaS Model -->
+        <div class="reveal" style="margin-top:28px;background:var(--surf2);border-radius:var(--r2);border:1px solid var(--bd);padding:22px 26px;">
+          <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:16px;">Commerce-as-a-Service · Subscribe at any level — outcome module to full platform</div>
+          <div class="caas-grid">
+            <div style="padding:14px;border-radius:var(--r);background:var(--surf);border:1px solid var(--bd);border-top:2px solid var(--teal);">
+              <div style="font-size:11px;font-weight:700;color:var(--teal);margin-bottom:5px;">Outcome Module</div>
+              <div style="font-size:11px;color:var(--mu);font-weight:300;line-height:1.5;margin-bottom:8px;">One specific commercial outcome. Ideal for solving a defined problem at speed.</div>
+              <div style="font-size:10px;color:var(--mu);">e.g. Pricing Strategy · Recommendation Systems</div>
+            </div>
+            <div style="padding:14px;border-radius:var(--r);background:var(--surf);border:1px solid var(--bd);border-top:2px solid var(--gold);">
+              <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:5px;">Outcome Pillar</div>
+              <div style="font-size:11px;color:var(--mu);font-weight:300;line-height:1.5;margin-bottom:8px;">All 6 outcome modules within one pillar. Domain transformation with full accountability.</div>
+              <div style="font-size:10px;color:var(--mu);">e.g. P9 Personalization-aaS · P10 Performance-aaS</div>
+            </div>
+            <div style="padding:14px;border-radius:var(--r);background:var(--surf);border:1px solid var(--bd);border-top:2px solid var(--amber);">
+              <div style="font-size:11px;font-weight:700;color:var(--amber);margin-bottom:5px;">Outcome Layer</div>
+              <div style="font-size:11px;color:var(--mu);font-weight:300;line-height:1.5;margin-bottom:8px;">Complete experience layer — 4 pillars, 24 outcome modules. Full experience transformation.</div>
+              <div style="font-size:10px;color:var(--mu);">e.g. Commerce Growth-aaS · Commerce Delivery-aaS</div>
+            </div>
+            <div style="padding:14px;border-radius:var(--r);background:rgba(232,160,32,.06);border:1px solid rgba(232,160,32,.2);border-top:2px solid var(--gold);">
+              <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:5px;">Outcome Platform</div>
+              <div style="font-size:11px;color:var(--mu);font-weight:300;line-height:1.5;margin-bottom:8px;">Full 12P™ — all 12 pillars, all 72 outcome modules. End-to-end commerce transformation.</div>
+              <div style="font-size:10px;color:var(--mu);">Complete commerce OS rebuild with Fractional CCO</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end 12P panel -->
+
+      <!-- 6 COMMERCE FITS -->
+      <div class="fw-panel" id="fwp-cf">
+        <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:start;margin-bottom:28px;" class="reveal">
+          <div>
+            <div style="width:56px;height:56px;border-radius:14px;background:rgba(59,191,184,.1);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:var(--teal);margin-bottom:16px;">6CF</div>
+            <h3 style="font-size:clamp(18px,3vw,28px);font-weight:900;letter-spacing:-.8px;margin-bottom:8px;">6 Commerce Fits Diagnostic</h3>
+            <p style="font-size:13px;color:var(--tx2);line-height:1.8;font-weight:300;margin-bottom:20px;">Six domain boundaries. Six diagnostic questions. A complete commercial coherence test — mirroring the 6 Value Fits exactly at the commerce execution level. When a Value Fit fails at enterprise level, the corresponding Commerce Fit reveals where the commerce operation is manifesting that failure.</p>
+            <div style="padding:14px 16px;background:rgba(59,191,184,.06);border:1px solid rgba(59,191,184,.2);border-radius:var(--r);font-size:12px;color:var(--tx2);line-height:1.65;font-weight:300;"><strong style="color:var(--teal);font-weight:700;">How to use:</strong> Work through CF1 to CF5 sequentially. A failed upstream fit makes downstream fits harder to pass. CF6 is the flywheel — it closes the commercial operating cycle.</div>
+          </div>
+          <div style="background:var(--surf);border-radius:var(--r2);border:1px solid var(--bd);padding:20px;">
+            <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--mu);font-weight:600;margin-bottom:14px;">6 Commerce Fits · mirror of 6 Value Fits</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--teal);background:rgba(59,191,184,.05);display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:center;">
+                <div style="font-size:13px;font-weight:900;color:var(--teal);">CF1</div>
+                <div><div style="font-size:11px;font-weight:700;">Commerce Leadership ↔ Commerce Identity</div><div style="font-size:10px;color:var(--mu);">Mirrors VF1 · P1 ↔ P2+P3</div></div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--teal);background:rgba(59,191,184,.04);display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:center;">
+                <div style="font-size:13px;font-weight:900;color:var(--teal);">CF2</div>
+                <div><div style="font-size:11px;font-weight:700;">Commerce Identity ↔ Commerce Discovery</div><div style="font-size:10px;color:var(--mu);">Mirrors VF2 · P2+P3 ↔ P4</div></div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--gold);background:rgba(232,160,32,.05);display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:center;">
+                <div style="font-size:13px;font-weight:900;color:var(--gold);">CF3</div>
+                <div><div style="font-size:11px;font-weight:700;">Commerce Discovery ↔ Commerce Delivery</div><div style="font-size:10px;color:var(--mu);">Mirrors VF3 · P4 ↔ P5+P6+P7+P8+P11</div></div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--amber);background:rgba(224,123,79,.05);display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:center;">
+                <div style="font-size:13px;font-weight:900;color:var(--amber);">CF4</div>
+                <div><div style="font-size:11px;font-weight:700;">Commerce Delivery ↔ Commerce Growth</div><div style="font-size:10px;color:var(--mu);">Mirrors VF4 · P5+P6+P7+P8+P11 ↔ P9+P10</div></div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--indigo);background:rgba(123,92,229,.05);display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:center;">
+                <div style="font-size:13px;font-weight:900;color:var(--indigo);">CF5</div>
+                <div><div style="font-size:11px;font-weight:700;">Commerce Growth ↔ Commerce Differentiation</div><div style="font-size:10px;color:var(--mu);">Mirrors VF5 · P9+P10 ↔ P12 · Concurrent</div></div>
+              </div>
+              <div style="padding:9px 12px;border-radius:var(--r);border-left:3px solid var(--gold);background:rgba(232,160,32,.06);border:1px solid rgba(232,160,32,.2);display:grid;grid-template-columns:36px 1fr;gap:8px;align-items:center;">
+                <div style="font-size:13px;font-weight:900;color:var(--gold);">CF6↺</div>
+                <div><div style="font-size:11px;font-weight:700;">Commerce Differentiation ↔ Commerce Leadership</div><div style="font-size:10px;color:var(--mu);">Mirrors VF6 Flywheel · P12 ↔ P1 · Closes the cycle</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;" class="reveal">
+
+          <div class="cf-card" style="border-color:rgba(59,191,184,.3);">
+            <div class="cf-num" style="color:var(--teal);font-size:24px;">CF1</div>
+            <div class="cf-name">Commerce Leadership ↔ Commerce Identity</div>
+            <div class="cf-pair">P1 ↔ P2 + P3 · Mirrors VF1</div>
+            <span class="cf-tag" style="background:rgba(59,191,184,.1);color:var(--teal);">Leadership → Identity</span>
+            <div class="cf-q">"Does the commercial strategy express itself coherently through brand character and market perception — or does the brand behave differently from what the strategy intends?"</div>
+          </div>
+
+          <div class="cf-card" style="border-color:rgba(59,191,184,.2);">
+            <div class="cf-num" style="color:var(--teal);font-size:24px;">CF2</div>
+            <div class="cf-name">Commerce Identity ↔ Commerce Discovery</div>
+            <div class="cf-pair">P2 + P3 ↔ P4 · Mirrors VF2</div>
+            <span class="cf-tag" style="background:rgba(59,191,184,.1);color:var(--teal);">Identity → Discovery</span>
+            <div class="cf-q">"Is the proposition grounded in customer truth — or built from what the brand believes about itself without validation from the market?"</div>
+          </div>
+
+          <div class="cf-card" style="border-color:rgba(232,160,32,.3);">
+            <div class="cf-num" style="color:var(--gold);font-size:24px;">CF3</div>
+            <div class="cf-name">Commerce Discovery ↔ Commerce Delivery</div>
+            <div class="cf-pair">P4 ↔ P5 + P6 + P7 + P8 + P11 · Mirrors VF3</div>
+            <span class="cf-tag" style="background:rgba(232,160,32,.1);color:var(--gold);">Discovery → Delivery</span>
+            <div class="cf-q">"Does what we sell match how we deliver it — across channels, platform, catalog, promotion, and all seven commerce promises?"</div>
+          </div>
+
+          <div class="cf-card" style="border-color:rgba(224,123,79,.3);">
+            <div class="cf-num" style="color:var(--amber);font-size:24px;">CF4</div>
+            <div class="cf-name">Commerce Delivery ↔ Commerce Growth</div>
+            <div class="cf-pair">P5+P6+P7+P8+P11 ↔ P9+P10 · Mirrors VF4</div>
+            <span class="cf-tag" style="background:rgba(224,123,79,.1);color:var(--amber);">Delivery → Growth</span>
+            <div class="cf-q">"Can the delivery architecture honour all seven commerce promises at the scale the personalization and performance engines are generating — or does NPS fall as revenue rises?"</div>
+          </div>
+
+          <div class="cf-card" style="border-color:rgba(123,92,229,.3);">
+            <div class="cf-num" style="color:var(--indigo);font-size:24px;">CF5</div>
+            <div class="cf-name">Commerce Growth ↔ Commerce Differentiation</div>
+            <div class="cf-pair">P9 + P10 ↔ P12 · Mirrors VF5 · Concurrent</div>
+            <span class="cf-tag" style="background:rgba(123,92,229,.1);color:var(--indigo);">Concurrent</span>
+            <div class="cf-q">"Is the growth engine architected to build proprietary advantage simultaneously — or is the intelligence it generates evaporating after each campaign cycle without compounding into defensible assets?"</div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:10px;padding:22px 24px;border-radius:var(--r2);background:rgba(232,160,32,.06);border:1px solid rgba(232,160,32,.25);" class="reveal">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+            <div style="font-size:24px;font-weight:900;color:var(--gold);">CF6 ↺</div>
+            <div>
+              <div style="font-size:15px;font-weight:800;letter-spacing:-.3px;">Commerce Differentiation ↔ Commerce Leadership</div>
+              <div style="font-size:11px;color:var(--mu);">P12 Primacy ↔ P1 Purpose · Mirrors VF6 Flywheel · Closes the commercial operating cycle</div>
+            </div>
+          </div>
+          <div style="font-size:13px;color:var(--tx2);line-height:1.75;font-style:italic;margin-bottom:8px;">"Do proprietary data assets, network effects, and ecosystem partnerships compound back into sharper commercial strategy — sharpening choices about which categories, channels, and segments to pursue next?"</div>
+          <div style="font-size:12px;color:var(--mu);line-height:1.7;">The commerce flywheel. A business that passes CF1–CF5 but fails CF6 has a strong commerce operation that will eventually plateau. A business that passes CF6 has an operation where every growth cycle produces proprietary intelligence that makes the next strategic choice sharper — each cycle of Commerce Differentiation feeding back into sharper Commerce Leadership. This is the commerce-level expression of the original 8P's closing loop, now structurally grounded in V6 Primacy logic.</div>
+        </div>
+
+      </div>
+
+      <!-- THREE HORIZONS -->
+      <div class="fw-panel" id="fwp-th">
+        <div style="margin-bottom:28px;" class="reveal">
+          <div style="width:56px;height:56px;border-radius:14px;background:rgba(224,123,79,.1);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:var(--amber);margin-bottom:16px;">3H</div>
+          <h3 style="font-size:clamp(18px,3vw,28px);font-weight:900;letter-spacing:-.8px;margin-bottom:8px;">Three Horizons of Commerce</h3>
+          <p style="font-size:13px;color:var(--tx2);line-height:1.8;font-weight:300;max-width:620px;">The commerce landscape is undergoing its most profound transformation since the invention of the shopping cart. Understanding the shift from human-driven to AI-augmented to autonomous isn't optional — it is the difference between leading your category and being disrupted by it.</p>
+        </div>
+        <div class="th-grid reveal">
+          <div class="th-item">
+            <div class="th-h" style="color:var(--teal);">H1</div>
+            <div class="th-name">Human-Driven Commerce</div>
+            <div class="th-sub" style="color:var(--teal);">Current State · Now</div>
+            <p class="th-body">Commerce operations driven by human decision-making at every layer. Brand, campaign, merchandising, and service decisions made by people, informed by data. Most organisations operate here — but the window is narrowing faster than most acknowledge.</p>
+          </div>
+          <div class="th-item">
+            <div class="th-h" style="color:var(--gold);">H2</div>
+            <div class="th-name">AI-Augmented Commerce</div>
+            <div class="th-sub" style="color:var(--gold);">Transition · Now–3 Years</div>
+            <p class="th-body">Human decisions augmented by AI recommendation, prediction, and automation. AI handles pattern recognition and optimisation; humans handle judgment and strategy. The critical window where competitive advantage is being built — or permanently ceded.</p>
+          </div>
+          <div class="th-item">
+            <div class="th-h" style="color:var(--amber);">H3</div>
+            <div class="th-name">Autonomous Commerce</div>
+            <div class="th-sub" style="color:var(--amber);">Target State · 3–7 Years</div>
+            <p class="th-body">Commerce operations that run autonomously within defined strategic parameters. Humans set strategy, values, and constraints; AI executes the commerce system. The 12P™ Framework is architectured to operate — and compound — in this state.</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end fw-panels -->
+  </div>
+</section>
+
+<hr class="div-line">
+
+<!-- ══════════ WORK WITH US ══════════ -->
+<section id="engage">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Work With Us</span>
+      <h2>Engagement <em>Models</em></h2>
+      <p class="lead">Four structures — matched to your commerce transformation stage, urgency, and the depth of outcome system you need to build.</p>
+    </div>
+    <div class="engage-cards mt-48">
+      <div class="eng-card reveal">
+        <div class="ec-head" style="background:var(--teal);"><div class="ec-dur">3–6 months</div></div>
+        <div class="ec-dots"><div class="ec-dot" style="background:var(--teal);"></div><div class="ec-dot" style="background:var(--gold);"></div><div class="ec-dot" style="background:rgba(255,255,255,.15);"></div></div>
+        <div class="ec-body">
+          <div class="ec-type" style="color:var(--teal);">Strategic Advisory</div>
+          <div class="ec-sub">See the whole picture</div>
+          <div class="ec-desc">C-suite advisory with 12P™ diagnostic, defined commercial outcomes, and monthly engagement. Clarity before transformation investment.</div>
+          <div class="ec-link" style="color:var(--teal);">Learn more →</div>
+        </div>
+      </div>
+      <div class="eng-card reveal">
+        <div class="ec-head" style="background:var(--gold);"><div class="ec-dur">6–12 months</div></div>
+        <div class="ec-dots"><div class="ec-dot" style="background:var(--teal);"></div><div class="ec-dot" style="background:var(--gold);"></div><div class="ec-dot" style="background:var(--amber);"></div></div>
+        <div class="ec-body">
+          <div class="ec-type" style="color:var(--gold);">Transformation Program</div>
+          <div class="ec-sub">Change the system</div>
+          <div class="ec-desc">End-to-end commerce transformation across all three experience layers. Milestone-based delivery. Measurable commercial outcomes at each stage.</div>
+          <div class="ec-link" style="color:var(--gold);">Learn more →</div>
+        </div>
+      </div>
+      <div class="eng-card reveal" style="border-color:rgba(232,160,32,.3);">
+        <div class="ec-head" style="background:linear-gradient(135deg,var(--gold),var(--amber));"><div class="ec-dur">Ongoing · Embedded</div></div>
+        <div class="ec-dots"><div class="ec-dot" style="background:var(--teal);"></div><div class="ec-dot" style="background:var(--gold);"></div><div class="ec-dot" style="background:var(--amber);"></div></div>
+        <div class="ec-body">
+          <div class="ec-type" style="color:var(--gold);">Fractional CCO</div>
+          <div class="ec-sub">Embed the accountability</div>
+          <div class="ec-desc">Chief Commerce Officer embedded 2–3 days/week. Full 12P™ accountability. P&L outcomes, not advisory outputs. The only engagement of its kind in commerce consulting.</div>
+          <div class="ec-link" style="color:var(--gold);">Learn more →</div>
+        </div>
+      </div>
+      <div class="eng-card reveal">
+        <div class="ec-head" style="background:var(--indigo);"><div class="ec-dur">4–12 weeks</div></div>
+        <div class="ec-dots"><div class="ec-dot" style="background:var(--teal);"></div><div class="ec-dot" style="background:var(--gold);"></div><div class="ec-dot" style="background:var(--indigo);"></div></div>
+        <div class="ec-body">
+          <div class="ec-type" style="color:var(--indigo);">Project-Based</div>
+          <div class="ec-sub">Solve the specific</div>
+          <div class="ec-desc">Focused on a defined commerce challenge. 8 Commerce Fits Diagnostic, 12P™ pillar deep-dive, or commerce GTM sprint. Time-bound with defined deliverables.</div>
+          <div class="ec-link" style="color:var(--indigo);">Learn more →</div>
+        </div>
+      </div>
+    </div>
+    <div class="included-strip mt-24 reveal">
+      <div class="is-label">Every engagement includes:</div>
+      <div class="is-items">
+        <div class="is-item"><div style="width:6px;height:6px;border-radius:50%;background:var(--teal);"></div>12P™ Diagnostic</div>
+        <div class="is-item"><div style="width:6px;height:6px;border-radius:50%;background:var(--gold);"></div>8 Commerce Fits Assessment</div>
+        <div class="is-item"><div style="width:6px;height:6px;border-radius:50%;background:var(--amber);"></div>Outcome Accountability</div>
+        <div class="is-item"><div style="width:6px;height:6px;border-radius:50%;background:var(--indigo);"></div>AI Alignment Plan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ INSIGHTS ══════════ -->
+<section id="insights">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Thought Leadership</span>
+      <h2>Shaping the Commerce <em>Conversation</em></h2>
+      <p class="lead">Published perspectives on intelligent commerce, marketplace strategy, and retail transformation in the age of autonomous commerce.</p>
+    </div>
+    <div class="insights-layout mt-48">
+      <div class="feat-card reveal">
+        <div class="feat-badge"><div class="feat-pill">FEATURED</div><div class="feat-read">15 min read</div></div>
+        <div class="feat-title">The Three Horizons of Commerce: From Human-Driven to Autonomous Operations</div>
+        <p class="feat-excerpt">The commerce landscape is undergoing its most profound transformation since the invention of the shopping cart. Understanding the shift isn't optional — it's the difference between leading your category and being disrupted by it.</p>
+        <div class="feat-meta"><div class="feat-avatar"></div><div class="feat-author">Kartik G Iyer · March 2026</div></div>
+        <div class="feat-tags"><div class="feat-tag">Autonomous Commerce</div><div class="feat-tag">AI Strategy</div><div class="feat-tag">Transformation</div></div>
+        <div class="feat-link">Read Full Article →</div>
+      </div>
+      <div class="art-grid reveal">
+        <div class="art-card">
+          <div class="ac-title">The 12P™ Intelligent Commerce Framework: A Complete Operating System for the Unified Commerce Era</div>
+          <div class="ac-desc">Why the traditional marketing mix no longer serves commerce leaders — and what to use instead</div>
+          <div class="ac-meta"><span>Kartik G Iyer</span><span>·</span><span>March 2026</span><span>·</span><span>18 min</span></div>
+        </div>
+        <div class="art-card teal">
+          <div class="ac-title">The 8 Commerce Fits: Diagnosing Where Commerce Operations Break Down</div>
+          <div class="ac-desc">Why most commerce problems are connection problems, not pillar problems</div>
+          <div class="ac-meta"><span>Kartik G Iyer</span><span>·</span><span>March 2026</span><span>·</span><span>16 min</span></div>
+        </div>
+        <div class="art-card amber">
+          <div class="ac-title">The Commerce Promise Architecture: Why 12P P11 Covers Seven Distinct Commerce Promises</div>
+          <div class="ac-desc">From Search Promise through Support Promise — the full promise lifecycle that commerce businesses must keep</div>
+          <div class="ac-meta"><span>Kartik G Iyer</span><span>·</span><span>March 2026</span><span>·</span><span>12 min</span></div>
+        </div>
+        <div class="art-card indigo">
+          <div class="ac-title">Price to Win: Dynamic Pricing Architecture for Marketplace Sellers</div>
+          <div class="ac-desc">How intelligent pricing drives sustainable competitive advantage, not just short-term volume</div>
+          <div class="ac-meta"><span>Kartik G Iyer</span><span>·</span><span>January 2026</span><span>·</span><span>10 min</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="div-line">
+
+<!-- ══════════ FOUNDERS / ABOUT ══════════ -->
+<section id="founders">
+  <div class="wrap">
+    <div style="max-width:640px;margin:0 auto;text-align:center;" class="reveal">
+      <span class="eyebrow">About Us</span>
+      <h2>Practitioners.<br><em>Not Theorists.</em></h2>
+      <p class="lead" style="margin:0 auto;">Growtharchers is built by two commerce practitioners with 50+ combined years of P&L leadership — who decided that the commerce transformation problem required a structurally different kind of firm.</p>
+    </div>
+    <div class="founders-grid mt-48">
+      <div class="founder-card reveal">
+        <div class="fc-avatar">KI</div>
+        <div class="fc-name">Kartik G Iyer</div>
+        <div class="fc-role">Founder &amp; Chief Growth Architect</div>
+        <p class="fc-bio">26+ years of P&L leadership and consulting across fashion, luxury and electronics marketplaces; creative commerce, digital transformation, and commerce media agencies; technology distribution, consumer hardware, and FMCG MNCs. The architect of the 12P™ Intelligent Commerce Framework, 8 Commerce Fits Diagnostic, and Three Horizons of Commerce — built from two decades of leading commerce P&L at scale.</p>
+        <div class="fc-creds">
+          <div class="fcc"><div class="fcc-icon">🎓</div><div><div class="fcc-text">Global Executive MBA</div><div class="fcc-sub">ISB + Wharton + Kellogg (FT Rank 53)</div></div></div>
+          <div class="fcc"><div class="fcc-icon">🏢</div><div><div class="fcc-text">Nokia · BlackBerry · Samsung · Apple India · Flipkart · VML/WPP · Publicis</div><div class="fcc-sub">Commerce P&L leadership across MNCs, marketplaces, and agency networks</div></div></div>
+        </div>
+      </div>
+      <div class="founder-card reveal">
+        <div class="fc-avatar">NC</div>
+        <div class="fc-name">Niranjani C</div>
+        <div class="fc-role">Co-founder &amp; Strategic Advisor</div>
+        <p class="fc-bio">25+ years as a senior finance leader across multinational corporations. Currently CFO, Kenvue India/South Asia. Former CFO, Hershey India/EU/WTR (≈$1.5Bn P&L scope). P&G Group Comptroller, Category Finance &amp; Strategy Director (Singapore). Nokia Business Controller. The financial architecture, commercial rigour, and CFO-level strategic intelligence behind the Growtharchers engagement model and Fractional CCO P&L accountability framework.</p>
+        <div class="fc-creds">
+          <div class="fcc"><div class="fcc-icon">📊</div><div><div class="fcc-text">CFA · All India 9th Rank</div><div class="fcc-sub">Gold Medalist PGDBA &amp; BCom · INSEAD Digital Transformation 2022</div></div></div>
+          <div class="fcc"><div class="fcc-icon">💼</div><div><div class="fcc-text">Independent Director — Onward Technologies</div><div class="fcc-sub">Current CFO, Kenvue India/South Asia</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="eco-bridge mt-48 reveal">
+      <div class="eb-title">Part of the Archers Advisory Ecosystem</div>
+      <p class="eb-body">Growtharchers is one of three complementary platforms — each with a distinct framework, audience, and IP — built from a shared intellectual lineage.</p>
+      <div class="eb-brands">
+        <div class="eb-brand active"><div class="eb-dot" style="background:var(--gold);"></div>Growtharchers<span style="font-size:10px;opacity:.5;margin-left:4px;">Commerce OS</span></div>
+        <div class="eb-brand"><div class="eb-dot" style="background:#2EC4A0;"></div>Careerarchers<span style="font-size:10px;opacity:.5;margin-left:4px;">Career OS</span></div>
+        <div class="eb-brand"><div class="eb-dot" style="background:#7B5CE5;"></div>Valuearchers<span style="font-size:10px;opacity:.5;margin-left:4px;">Business OS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section id="cta">
+  <div class="wrap">
+    <div class="cta-inner">
+      <div class="cta-tag reveal">G∧ · 12P™ Commerce OS · Strategy to Impact</div>
+      <h2 class="reveal">Start a Commerce<br><em>Conversation.</em></h2>
+      <p class="cta-sub reveal">Every Growtharchers engagement begins with the 8 Commerce Fits Diagnostic — a one-conversation audit of where your commerce operation is losing alignment across the 12P system. Immediate diagnostic value, no commitment required.</p>
+      <div class="cta-buttons reveal">
+        <a href="#engage" class="btn-primary" style="font-size:14px;padding:15px 30px;">Start a Conversation <span class="btn-arrow">→</span></a>
+        <a href="#frameworks" class="btn-outline" style="font-size:14px;padding:15px 30px;">Explore the 12P™ Framework</a>
+      </div>
+      <div class="contact-card reveal">
+        <div class="cc-item"><div class="cc-label">Email</div><div class="cc-value">hello@growtharchers.com</div></div>
+        <div class="cc-div"></div>
+        <div class="cc-item"><div class="cc-label">Location</div><div class="cc-value">Mumbai, India · Global Practice</div></div>
+        <div class="cc-div"></div>
+        <div class="cc-item"><div class="cc-label">Response</div><div class="cc-value">Within 24 hours</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</Base>

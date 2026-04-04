@@ -1,0 +1,89 @@
+# Decap CMS Configuration — Growtharchers
+# Docs: https://decapcms.org/docs/
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/growtharchers-web   # UPDATE THIS
+  branch: main
+
+# Media stored in the repo (no external service needed)
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Local development: run `npx decap-server` to test without GitHub OAuth
+# local_backend: true
+
+collections:
+
+  # ── INSIGHTS ARTICLES ─────────────────────────────────────────────
+  - name: "insights"
+    label: "Insights Articles"
+    label_singular: "Article"
+    folder: "src/content/insights"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "insights/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text",
+          hint: "Used for SEO meta description and article previews. 120–160 characters." }
+      - { label: "Publish Date", name: "publishDate", widget: "datetime",
+          format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Author", name: "author", widget: "string", default: "Kartik G Iyer" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options:
+          - "12P Framework"
+          - "6 Commerce Fits"
+          - "Three Horizons"
+          - "Commerce Strategy"
+          - "Intelligent Commerce"
+          - "D2C Strategy"
+          - "Marketplace Strategy"
+          - "Omnichannel"
+          - "Fractional CCO"
+          - "AI Commerce"
+          - "6VS"
+          - "Case Study"
+      - { label: "Read Time", name: "readTime", widget: "string",
+          default: "10 min read", hint: "e.g. '12 min read'" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ── TEAM / FOUNDERS ───────────────────────────────────────────────
+  - name: "team"
+    label: "Team Members"
+    label_singular: "Team Member"
+    folder: "src/content/team"
+    create: true
+    slug: "{{fields.name | slugify}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Initials", name: "initials", widget: "string",
+          hint: "2 characters shown in avatar, e.g. KI" }
+      - { label: "Bio", name: "bio", widget: "text" }
+      - label: "Credentials"
+        name: "credentials"
+        widget: "list"
+        fields:
+          - { label: "Icon", name: "icon", widget: "string", default: "🎓" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Sub-text", name: "sub", widget: "string", required: false }
+      - { label: "Sort Order", name: "order", widget: "number", default: 1 }
+
+  # ── SITE SETTINGS ─────────────────────────────────────────────────
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Global Settings"
+        name: "global"
+        file: "src/content/settings/global.json"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+          - { label: "Twitter / X URL", name: "twitter", widget: "string" }
+          - { label: "CTA Headline", name: "ctaHeadline", widget: "string" }
+          - { label: "CTA Sub-text", name: "ctaSub", widget: "text" }

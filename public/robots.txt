@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block admin interface from indexing
+Disallow: /admin/
+Disallow: /admin
+
+# Sitemap location — submitted to Google Search Console
+Sitemap: https://growtharchers.com/sitemap-index.xml

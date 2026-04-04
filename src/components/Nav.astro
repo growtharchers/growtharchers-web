@@ -1,0 +1,43 @@
+---
+/**
+ * Nav.astro — Growtharchers navigation
+ * Fixed top nav with logo, links, and CTA.
+ * Active link highlighting is handled by the Base layout scroll script.
+ */
+---
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">
+      <svg class="ga-logo" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ga-g" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#7A5010"/>
+            <stop offset="50%" stop-color="#C9A035"/>
+            <stop offset="100%" stop-color="#F0C848"/>
+          </linearGradient>
+        </defs>
+        <path d="M 17 6 C 5 6 3 15 3 19 C 3 26 7 33 18 33 C 26 33 28 28 28 24 L 20 24" stroke="url(#ga-g)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M 22 8 L 30 28" stroke="url(#ga-g)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M 36 8 L 28 28" stroke="url(#ga-g)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M 24 20 L 34 20" stroke="url(#ga-g)" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="nav-logo-text">Growth<span>archers</span></div>
+        <div class="nav-sub">Strategy to Impact</div>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#founders">About Us</a></li>
+      <li><a href="#frameworks">12P™ Framework</a></li>
+      <li><a href="#approach">How We Work</a></li>
+      <li><a href="#difference">Our Difference</a></li>
+      <li><a href="#engage">Work With Us</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#founders">Our Founders</a></li>
+    </ul>
+
+    <a href="#cta" class="nav-cta">Start a Conversation →</a>
+  </div>
+</nav>
